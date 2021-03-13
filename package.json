@@ -2,7 +2,7 @@
   "name": "carousel",
   "private": true,
   "scripts": {
-    "test": "",
+    "test": "jest",
     "dev": "lerna run start:dev --parallel"
   },
   "workspaces": {
