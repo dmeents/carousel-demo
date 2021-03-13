@@ -9,6 +9,7 @@
   "exclude": [],
   "extends": "../../.config/tsconfig.web.json",
   "include": [
-    "src"
+    "./src",
+    "./webpack.config.ts"
   ]
 }

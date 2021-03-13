@@ -1,6 +1,6 @@
 import { Controller } from '../_decorators/controller';
 import { Get } from '../_decorators/get';
-import { SiteTemplate } from './site-templates.interface';
+import { SiteTemplate, SiteTemplateBrief } from './site-templates.interface';
 import { SiteTemplatesService } from './site-templates.service';
 
 /**
@@ -11,7 +11,7 @@ export class SiteTemplateController {
   constructor(private siteTemplatesService: SiteTemplatesService) {}
 
   @Get('/')
-  async getAll(req, res): Promise<SiteTemplate[]> {
+  async getAll(req, res): Promise<SiteTemplateBrief[]> {
     const response = await this.siteTemplatesService.getAll();
     return res.send(response);
   }

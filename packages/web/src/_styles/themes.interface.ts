@@ -1,0 +1,34 @@
+export interface Theme {
+  background: string;
+  black: string;
+  borderColor: string;
+  failure: string;
+  fontColor: string;
+  foreground: string;
+  formBackground: string;
+  grey10: string;
+  grey20: string;
+  grey30: string;
+  insetShadow10: string;
+  primary10: string;
+  primary20: string;
+  primary30: string;
+  secondary10: string;
+  secondary20: string;
+  secondary30: string;
+  shadow10: string;
+  success: string;
+  transparency1: string;
+  transparency5: string;
+  transparency10: string;
+  transparency20: string;
+  transparency30: string;
+  transparency40: string;
+  transparency50: string;
+  transparency60: string;
+  transparency70: string;
+  transparency80: string;
+  transparency90: string;
+  warning: string;
+  white: string;
+}

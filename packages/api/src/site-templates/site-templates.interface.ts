@@ -6,3 +6,9 @@ export interface SiteTemplate {
   thumbnail: string;
   image: string;
 }
+
+export interface SiteTemplateBrief {
+  title: string;
+  id: string;
+  thumbnail: string;
+}

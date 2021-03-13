@@ -1,6 +1,7 @@
 import 'reflect-metadata';
 import express from 'express';
 import morgan from 'morgan';
+import cors from 'cors';
 import { SiteTemplateModule } from './site-templates/site-templates.module';
 import { handleErrors } from './_middleware/handleErrors';
 
@@ -10,6 +11,7 @@ const app = express();
 // utilities
 app.use(morgan('dev'));
 app.use(handleErrors);
+app.use(cors());
 
 // health check
 app.use('/health', (req, res) => res.send({ status: 'ok' }));

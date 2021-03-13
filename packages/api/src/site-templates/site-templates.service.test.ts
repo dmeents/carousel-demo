@@ -9,8 +9,16 @@ const mockResponse: any = () => {
   return res;
 };
 
+const mockGetAllData = siteTemplates.map(i => ({
+  id: i.id,
+  title: i.title,
+  thumbnail: i.thumbnail,
+}));
+
 const mockSiteTemplatesRepository = {
-  getAll: async (): Promise<any> => Promise.resolve(siteTemplates),
+  getById: async (id: string): Promise<any> =>
+    Promise.resolve(siteTemplates.filter(i => i.id === id)[0]),
+  getAll: async (): Promise<any> => Promise.resolve(mockGetAllData),
 };
 
 describe('Site Templates Service', () => {
@@ -22,7 +30,7 @@ describe('Site Templates Service', () => {
 
   it('should return all template data', async () => {
     const response = await siteTemplateService.getAll();
-    expect(response).toEqual(siteTemplates);
+    expect(response).toEqual(mockGetAllData);
   });
 
   it('should return a single template if requested', async () => {
