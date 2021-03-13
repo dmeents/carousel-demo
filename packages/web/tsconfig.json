@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "baseUrl": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true
+  },
+  "exclude": [],
+  "extends": "../../.config/tsconfig.web.json",
+  "include": [
+    "src"
+  ]
+}

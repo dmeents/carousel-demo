@@ -2,16 +2,11 @@
   "name": "@carousel/web",
   "private": true,
   "scripts": {
-    "test": "",
     "dev": ""
   },
   "version": "1.0.0",
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
   "dependencies": {
-    "react": "^17.0.1"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
