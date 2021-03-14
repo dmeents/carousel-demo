@@ -6,7 +6,7 @@ import { Carousel } from '../../components/carousel/carousel.component';
 export const HomePage: React.FC = () => {
   return (
     <SHomePage.Container>
-      <GlobalHead title="hello world" />
+      <GlobalHead title="Carousel Demo" />
       <Carousel />
     </SHomePage.Container>
   );
